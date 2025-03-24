@@ -6,7 +6,7 @@ function FriendsList({ friends }) {
   const unfriendUser = async (friendId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/friends/unfriend/${friendId}`,
+        `https://signzy-assignment-1f09.onrender.com/api/friends/unfriend/${friendId}`,
         {
           method: 'DELETE',
           headers: {

@@ -11,7 +11,7 @@ function Recommendations() {
 
   const fetchRecommendations = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/friends/recommendations', {
+      const response = await fetch('https://signzy-assignment-1f09.onrender.com/api/friends/recommendations', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
@@ -28,7 +28,7 @@ function Recommendations() {
   const sendFriendRequest = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/friends/request/${userId}`,
+        `https://signzy-assignment-1f09.onrender.com/api/friends/request/${userId}`,
         {
           method: 'POST',
           headers: {

@@ -10,7 +10,7 @@ function UserSearch() {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:5000/api/users/search?query=${query}`,
+        `https://signzy-assignment-1f09.onrender.com/api/users/search?query=${query}`,
         {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -27,7 +27,7 @@ function UserSearch() {
   const sendFriendRequest = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/friends/request/${userId}`,
+        `https://signzy-assignment-1f09.onrender.com/api/friends/request/${userId}`,
         {
           method: 'POST',
           headers: {

@@ -2,7 +2,7 @@ function FriendRequests({ requests }) {
   const handleRequest = async (requestId, status) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/friends/request/${requestId}`,
+        `https://signzy-assignment-1f09.onrender.com/api/friends/request/${requestId}`,
         {
           method: 'PUT',
           headers: {
